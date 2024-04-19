@@ -4,6 +4,7 @@ import Wallet from "../components/Wallet";
 import { useListen } from "../hooks/useListen";
 import { useMetamask } from "../hooks/useMetamask";
 
+
 const Home: NextPage = () => {
   const { dispatch } = useMetamask();
   const listen = useListen();
@@ -32,6 +33,9 @@ const Home: NextPage = () => {
 
       dispatch({ type: "pageLoaded", isMetamaskInstalled, wallet, balance });
     }
+
+    console.log("连接metamask成功！")
+
   }, []);
 
   return (
