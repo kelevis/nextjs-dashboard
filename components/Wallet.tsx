@@ -35,6 +35,9 @@ export default function Wallet() {
     const getSignature = async (account: string, tokenId: bigint): Promise<string> => {
         const wallet = ethers.Wallet.fromPhrase(config.myMnemonic6)
 
+        // const providerSepolia= new ethers.JsonRpcProvider(config.alchemy_Endpoints_Url_ethereum_sepolia)
+        // const wallet = new ethers.Wallet(config.mylinkContractSepoliaPrivateKey, providerSepolia)
+
         // 创建消息  生成签名
         // const account = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
         // const tokenId = "0"
@@ -232,6 +235,13 @@ export default function Wallet() {
                             <div className="ml-4 mt-4">
                                 <div className="flex items-center">
                                     <div className="ml-4">
+                                        <h1 className=" text-white">
+                                            demo-Contract: 0xe0B07aAbDeA7bFd007399827D76e14F8A3722ad5
+                                        </h1>
+                                        <h2 className=" text-white">
+                                            demo-Private: Ask the administrator                   .
+                                        </h2>
+
                                         <h3 className="text-lg font-medium leading-6 text-white">
                                             Address: <span>{wallet}</span>
                                         </h3>

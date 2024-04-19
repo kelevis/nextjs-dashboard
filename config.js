@@ -1,6 +1,7 @@
 export const myMnemonic6 = ""
 export const demoMnemonic4 = "wrist stick intact observe vanish mutual lucky light dynamic unusual coast when"   //0.1ETH
 export const demoMnemonic5 = "oyster napkin vote radio banana curious leg fit music split fantasy change"
+export const mylinkContractSepoliaPrivateKey = '376870d1d8240a7addfeeb7b7e36fa17a2e0fff985fe4317db39c746c95adffc';
 
 export const alchemy_ApiKey = '3BTT655Z0kgn8kQb4b7Sqo9CvhvbUf7Q';
 export const infura_ApiKey = '7d8c3fab860046ca9377b2012d875ebd'
@@ -520,4 +521,8 @@ export const abiGoerliMyToken = [{
 export const abiAirdropSepolia = [
     "function multiTransferToken(address,address[],uint256[]) external",
     "function multiTransferETH(address[],uint256[]) public payable",
+];
+
+export const abiMylinkSepolia = [
+
 ];
