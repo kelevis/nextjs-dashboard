@@ -213,7 +213,7 @@ export default function Wallet() {
         <div className="bg-truffle">
             <div className="mx-auto max-w-2xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                    <span className="block">Metamask API intro</span>
+                    <span className="block">Metamask Api Invoke</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-white">
                     Follow along with the{" "}
