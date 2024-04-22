@@ -25,12 +25,11 @@ export default function Wallet() {
     const showConnectButton = status !== "pageNotLoaded" && isMetamaskInstalled && !wallet;
     const isConnected = status !== "pageNotLoaded" && typeof wallet === "string";
 
+    const [error, setError] = useState(null);
     const [signature, setSignature] = useState<string | null>(null);
     const [loading, setLoading] = useState(false);
     const [inputAddress, setInputAddress] = useState<string>('');
     const [inputTokenId, setInputTokenId] = useState<string>('');
-
-
 
     const getSignature = async (account: string, tokenId: bigint): Promise<string> => {
         const wallet = ethers.Wallet.fromPhrase(config.myMnemonic6)
@@ -107,8 +106,12 @@ export default function Wallet() {
         try {
             const signatureResult = await getSignature(inputAddress,BigInt(inputTokenId)); // 调用 getSignature 函数，并传递文本输入框的值
             setSignature(signatureResult); // 更新签名结果
+            setError(null); // 清除之前的错误状态
         } catch (error) {
+
             console.error('Error getting signature:', error);
+            setError(error.message); // 设置错误状态为捕获到的错误信息
+
         }
     };
 
@@ -334,6 +337,10 @@ export default function Wallet() {
 
                             </div>
                         )}
+
+                        {/* 显示错误信息 */}
+                        {error && <div className="error-message">错误信息: {error}</div>}
+
 
                     </div>
                 )}

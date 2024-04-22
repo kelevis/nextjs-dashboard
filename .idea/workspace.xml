@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a08c42d0-079d-43f3-9399-89e58bd1f09e" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/components/error.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Wallet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Wallet.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -57,7 +66,8 @@
       <workItem from="1713410410490" duration="11870000" />
       <workItem from="1713489817107" duration="10134000" />
       <workItem from="1713507883470" duration="840000" />
-      <workItem from="1713508867073" duration="11339000" />
+      <workItem from="1713508867073" duration="11873000" />
+      <workItem from="1713767168137" duration="7774000" />
     </task>
     <servers />
   </component>
